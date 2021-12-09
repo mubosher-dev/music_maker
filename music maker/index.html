@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv music maker</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+    <div class="app">
+        <header>
+            <h1>Tap Music</h1>
+            <p>make music only tap</p>
+        </header>
+        <div class="visual">
+           <h1 class="releative">Magics <span class="player"></span> </h1>
+        </div>
+            <div class="pads">
+                <div class="pad1">
+                    <audio class="sounds" src="./music/musiс1.mp3"></audio>
+                </div>
+                <div class="pad2">
+                    <audio  class="sounds" src="./music/music2.mp3"></audio>
+                </div>
+                <div class="pad3">
+                    <audio  class="sounds" src="./music/music3.mp3"></audio>
+                </div>
+                <div class="pad4">
+                    <audio  class="sounds" src="./music/music4.mp3"></audio>
+                </div>
+                <div class="pad5">
+                    <audio  class="sounds" src="./music/music5.mp3"></audio>
+                </div>
+                <div class="pad6">
+                    <audio  class="sounds" src="./music/music6.mp3"></audio>
+                </div>
+            </div>
+    </div>
+
+
+
+    <!-- custom js links -->
+    <script src="./js/custom.js"></script>
+    <!-- typed js link -->
+    <script src="./js/typed.js-master/lib/typed.js"></script>
+    <script>
+        var typed = new Typed('.player', {
+            strings: [
+                'Player',
+                'Music Maker',
+                'Vertual Piano'
+            ],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
+</body>
+</html>
